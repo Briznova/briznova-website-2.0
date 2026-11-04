@@ -65,18 +65,19 @@ function About() {
       </Section>
 
       <Section tone="dark" id="leadership">
-        <SectionHeading tone="dark" eyebrow="Leadership" title="The founding team" intro="Biographies and photographs will be added shortly." />
+        <SectionHeading tone="dark" eyebrow="Leadership" title="The Founding Team"  />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {FOUNDERS.map((f, i) => (
             <Reveal key={f.name} delay={i * 80}>
               <div className="rounded-xl border border-line-dark bg-on-dark/5 p-5">
-                <div className="grid aspect-[4/5] place-items-center rounded-lg bg-midnight" aria-label={`Photo placeholder for ${f.name}`}>
-                  <UserRound className="h-14 w-14 text-on-dark-muted/50" />
+                <div className="grid aspect-[4/4] place-items-center rounded-lg bg-midnight" aria-label={`Photo placeholder for ${f.name}`}>
+                <img src={f.photo} alt={`${f.name}'s photo`} className=" w-full object-cover rounded-lg" />
+                  {/* <UserRound className="h-14 w-14 text-on-dark-muted/50" /> */}
                 </div>
                 <h3 className="mt-5 text-xl font-semibold">{f.name}</h3>
                 <p className="text-sm text-cyan">{f.role}</p>
-                <p className="mt-3 text-sm text-on-dark-muted">[Professional biography to be added]</p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-xs text-on-dark-muted"><Linkedin className="h-3.5 w-3.5" /> LinkedIn profile — to be added</span>
+                <p className="mt-3 text-sm text-on-dark-muted">{f.bio}</p>
+                {/* <span className="mt-4 inline-flex items-center gap-1.5 text-xs text-on-dark-muted"><Linkedin className="h-3.5 w-3.5" /> LinkedIn profile — to be added</span> */}
               </div>
             </Reveal>
           ))}

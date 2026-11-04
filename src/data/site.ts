@@ -75,10 +75,10 @@ export const INDUSTRIES = [
 ] as const;
 
 export const FOUNDERS = [
-  { name: "Suman", role: "Co-Founder & CEO" },
-  { name: "Kunal", role: "Co-Founder & CTO" },
-  { name: "Prince", role: "Co-Founder & CMO" },
-  { name: "Saurabh", role: "Founder & COO" },
+  { name: "Suman Jaiswal", role: "Co-Founder & Advisor" ,photo: "suman.JPEG", bio: 'IIT Indore'},
+  { name: "Saurabh Raj", role: "Founder & CEO" ,photo: "saurabh.JPEG" ,bio: 'TMSL Kolkata'},
+  { name: "Kunal Kumar", role: "Co-Founder & CTO" ,photo: "kunal.JPEG" ,bio: 'NIT Jamshedpur'},
+  { name: "Prince Gupta", role: "Co-Founder & CMO" ,photo: "prince.JPEG",bio: 'TMSL Kolkata'},
 ];
 
 export const INSIGHT_CATEGORIES = ["Technology", "Education Technology", "SaaS and Product Engineering", "Digital Transformation", "Business Automation", "Innovation"] as const;
